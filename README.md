@@ -11,14 +11,14 @@ The ‘R2ROC’ package can be used to derive test statistics for AUC values fro
 # INSTALLATION
 To use R2ROC:
 ```
-install.packages("R2ROC") 
+install.packages("devtools")
+library(devtools)
+devtools::install_github("mommy003/R2ROC")
 library(R2ROC)
 ```
  or
 ```
-install.packages("devtools")
-library(devtools)
-devtools::install_github("mommy003/R2ROC")
+install.packages("R2ROC") 
 library(R2ROC)
 ```
 
