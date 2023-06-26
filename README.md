@@ -6,7 +6,7 @@ Output: pdf_document
 ---
 
 # R2ROC
-The ‘R2ROC’ package can be used to derive test statistics for AUC values from polygenic risk score (PRS) models (variance and covariance of AUC values, p-value and 95% confidence intervals (CI)). For example, it can test if two sets of AUC values from two different PRS models are significantly different to each other whether the two sets of PGS are independent or dependent. used in the r2redux.  
+The ‘R2ROC’ package can be used to derive test statistics for AUC values from polygenic risk score (PRS) models (variance and covariance of AUC values, p-value, and 95% confidence intervals (CI)). For example, it can test if two sets of AUC values from two different PRS models are significantly different from each other and whether the two sets of PGS are independent or dependent. 
 
 # INSTALLATION
 To use R2ROC:
