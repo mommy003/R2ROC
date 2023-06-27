@@ -21,7 +21,7 @@
   #' \item{upper_diff}{Upper value of the differences}
   #' \item{lower_diff}{Upper value of the differences}
   #' \item{p}{two tailed P-value for significant difference between AUC1 and AUC2}
-  #' \item{p_one_tail}{tailed P-value for significant difference}
+  #' \item{p_one_tail}{one tailed P-value for significant difference}
   #' \item{heller_p}{P-value based on Heller's test for significant difference}
   #' \item{heller_upper_diff}{Upper limit of 95% CI for the difference basedon Heller's test}
   #' \item{heller_lower_diff}{Lower limit of 95% CI for the difference basedon Heller's test}
