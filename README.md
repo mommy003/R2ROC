@@ -16,7 +16,7 @@ library(devtools)
 devtools::install_github("mommy003/R2ROC")
 library(R2ROC)
 ```
- or
+ or from CRAN
 ```
 install.packages("R2ROC") 
 library(R2ROC)
