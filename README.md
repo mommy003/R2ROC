@@ -30,6 +30,7 @@ r2redux requires only phenotype and estimated PRS (from PLINK or any other softw
 - Phenotype (y)
 - PRS for discovery population 1 (x1)
 - PRS for discovery population 2 (x2)
+  
 To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(yx[,v2]). (here we define AUC= AUC(y=x[,v1])) and AUC=AUC(y=x[,v2])))
 
 # References
