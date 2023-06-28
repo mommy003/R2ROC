@@ -2,7 +2,6 @@
 Title: "R2ROC"
 Author: "Md Moksedul Momin and Hong Lee"
 Date: "00/00/00" #to be updated
-Output: pdf_document
 ---
 
 # R2ROC
