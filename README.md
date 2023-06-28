@@ -25,13 +25,13 @@ library(R2ROC)
 We illustrate the usage of R2ROC using multiple sets of PRS estimated based on GWAS summary statistics from the UK Biobank or Biobank Japan (reference datasets). In a target dataset, the phenotypes of target samples (y) can be predicted with PRS (a PRS model, e.g. y=PRS+e, where y and PRS are column-standardized 1 for the pre-adjusted phenotype. But for raw case-control data, phenotypes are assigned as 0 and 1. Note that the target individuals should be independent of reference individuals. We can test the significant differences in the AUC between a pair of PRS (see auc_var and auc_diff function and example in the manual).
 
 # DATA PREPARATION
-**Estimation of AUC and statistical testing of significant differences between AUC values of two PRS**:
+## Estimation of AUC and statistical testing of significant differences between AUC values of two PRS:
 R2ROC requires only phenotype and estimated PRS (from PLINK or any other software). Note that any missing value in the phenotypes and PRS tested in the model should be removed. If we want to test the significant difference of AUC values for two independent PRS, the auc_diff function can be used with an input file that includes the following fields (please see the dat1 and dat2 file embedded within the package and auc_diff function in the manual).
 - Phenotype (y)
 - PRS for discovery population 1 (x1)
 - PRS for discovery population 2 (x2)
 
-To get the AUC value for AUC(y=x[,v1]).(here we define AUC= AUC(y=x[,v1]))
+**To get the AUC value for AUC(y=x[,v1]).(here we define AUC= AUC(y=x[,v1]))**
 ```
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
@@ -49,7 +49,7 @@ output=auc_var(dat,v1,nv,kv)
 - output$lower_auc (lower limit of 95% CI for AUC)
 - 0.6690079
   
-To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2]).(here we define AUC= AUC(y=x[,v1])) and AUC=AUC(y=x[,v2])))
+**To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2]).(here we define AUC= AUC(y=x[,v1])) and AUC=AUC(y=x[,v2])))**
 ```
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
@@ -72,7 +72,7 @@ output=auc_diff(dat,v1,v2,nv,kv)
 - output$p_one_tail (one-tailed P-value for the differences is significantly different from zero)
 - 3.57347e-74
 
-To get the test statistics for the difference between AUC(y=x[,v1]+x[,v2]) and AUC(y=x[,v2]).
+**To get the test statistics for the difference between AUC(y=x[,v1]+x[,v2]) and AUC(y=x[,v2]).**
 ```
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
