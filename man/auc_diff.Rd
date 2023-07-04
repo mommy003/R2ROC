@@ -37,6 +37,79 @@ x is N by M matrix having M explanatory variables.
 v1 or v2 indicates the ith column in the x matrix
 (v1 or v2 can be multiple values between 1 - M, see Arguments below)
 }
+\examples{
+To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2])
+dat=dat1 #(this example embedded within the package)
+nv=length(dat$V1)
+kv=0.2 #proportion of cases (prevalence)
+v1=c(1)
+v2=c(2)
+output=auc_diff(dat,v1,v2,nv,kv)
+
+#R2ROC output
+#output$mean_diff (mean difference of AUC1 and AUC2)
+#0.1344427
+
+#output$var (variance of AUC difference)
+#5.467435e-05
+
+#output$upper_diff (upper limit of 95\% CI for difference)
+#0.1489353
+
+#output$lower_diff (lower limit of 95\% CI for difference)
+#0.11995
+
+#output$p (two-tailed P-value for the differences is
+#significantly different from zero)
+#7.14694e-74
+
+#output$p_one_tail (one-tailed P-value for the differences
+#is significantly different from zero)
+#3.57347e-74
+
+
+#To get the test statistics for the difference between
+AUC(y=x[,v1]+x[,v2]) and AUC(y=x[,v2])
+dat=dat1 #(this example embedded within the package)
+nv=length(dat$V1)
+kv=0.2 #proportion of cases (prevalence)
+v1=c(1,2)
+v2=c(2)
+output=auc_diff(dat,v1,v2,nv,kv)
+
+#R2ROC output
+#output$mean_diff (mean difference of AUC1 and AUC2)
+#0.1374099
+
+#output$var (variance of AUC difference)
+#7.037293e-05
+
+#output$upper_diff (upper limit of 95\% CI for difference)
+#0.1538521
+
+#output$lower_diff (lower limit of 95\% CI for difference)
+#0.1209678
+
+#output$p (two-tailed P-value for the differences is
+#significantly different from zero)
+#2.655147e-60
+
+#output$p_one_tail (one-tailed P-value for the differences
+#is significantly different from zero)
+#1.327574e-60
+
+#output$heller_p (two-tailed P-value based on Hellers test
+#for the differences is significantly different from zero)
+#2.180027e-235
+
+#output$heller_upper_diff (upper limit of 95\% CI for
+#difference based on Hellers test)
+#0.1543439
+
+#output$heller_lower_diff (lower limit of 95\% CI for
+#difference based on Hellers test)
+#0.1214596
+}
 \keyword{R2}
 \keyword{information}
 \keyword{matrix}
