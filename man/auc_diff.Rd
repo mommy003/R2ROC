@@ -38,7 +38,8 @@ v1 or v2 indicates the ith column in the x matrix
 (v1 or v2 can be multiple values between 1 - M, see Arguments below)
 }
 \examples{
-To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2])
+#To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2])
+
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
 kv=0.2 #proportion of cases (prevalence)
@@ -70,6 +71,7 @@ output=auc_diff(dat,v1,v2,nv,kv)
 
 #To get the test statistics for the difference between
 AUC(y=x[,v1]+x[,v2]) and AUC(y=x[,v2])
+
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
 kv=0.2 #proportion of cases (prevalence)

@@ -20,24 +20,25 @@
   #' \item{lower_auc}{Lower limit of 95% CI for AUC}
   #' @examples
   #' #To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2])
- #' dat=dat1 #(this example embedded within the package)
- #' nv=length(dat$V1)
- #' kv=0.2 #proportion of cases (prevalence)
- #' v1=c(1)
- #' output=auc_var(dat,v1,nv,kv)
- #' #R2ROC output
- #' 
- #' #output$auc (AUC)
- #' #0.6821015
- #' 
- #' #output$var (variance of AUC)
- #' #4.462817e-05
- #' 
- #' #output$upper_auc (upper limit of 95% CI for AUC)
- #' #0.6951951
- #' 
- #' #output$lower_auc (lower limit of 95% CI for AUC)
- #' #0.6690079
+  #'
+  #' dat=dat1 #(this example embedded within the package)
+  #' nv=length(dat$V1)
+  #' kv=0.2 #proportion of cases (prevalence)
+  #' v1=c(1)
+  #' output=auc_var(dat,v1,nv,kv)
+  #' #R2ROC output
+  #' 
+  #' #output$auc (AUC)
+  #' #0.6821015
+  #' 
+  #' #output$var (variance of AUC)
+  #' #4.462817e-05
+  #' 
+  #' #output$upper_auc (upper limit of 95% CI for AUC)
+  #' #0.6951951
+  #' 
+  #' #output$lower_auc (lower limit of 95% CI for AUC)
+  #' #0.6690079
 
 
 

@@ -26,7 +26,8 @@
   #' \item{heller_upper_diff}{Upper limit of 95% CI for the difference basedon Heller's test}
   #' \item{heller_lower_diff}{Lower limit of 95% CI for the difference basedon Heller's test}
   #' @examples
-  #' To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2])
+  #' #To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2])
+  #' 
   #' dat=dat1 #(this example embedded within the package)
   #' nv=length(dat$V1)
   #' kv=0.2 #proportion of cases (prevalence)
@@ -58,6 +59,7 @@
   #' 
   #' #To get the test statistics for the difference between
   #' AUC(y=x[,v1]+x[,v2]) and AUC(y=x[,v2])
+  #' 
   #' dat=dat1 #(this example embedded within the package)
   #' nv=length(dat$V1)
   #' kv=0.2 #proportion of cases (prevalence)
