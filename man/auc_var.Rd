@@ -38,8 +38,8 @@ nv=length(dat$V1)
 kv=0.2 #proportion of cases (prevalence)
 v1=c(1)
 output=auc_var(dat,v1,nv,kv)
-#R2ROC output
 
+#R2ROC output
 #output$auc (AUC)
 #0.6821015
 

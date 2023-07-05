@@ -18,13 +18,13 @@ auc_diff(dat, v1, v2, nv, kv)
 \item{kv}{Population prevalence}
 }
 \value{
-This function will estimate significant difference between two PRS (either dependent or independent and joint or single). To get the test statistics for the difference between AUC(y~x[,v1]) and AUC(y~x[,v2]). (here we define AUC1=AUC(y~x[,v1])) and AUC2=AUC(y~x[,v2]))). The outputs are listed as follows.
+This function will estimate significant difference between two PRS (either dependent or independent and joint or single). To get the test statistics for the difference between AUC(y~x[,v1]) and AUC(y~x[,v2]) (here we define AUC1=AUC(y~x[,v1])) and AUC2=AUC(y~x[,v2]))). The outputs are listed as follows.
 \item{mean_diff}{AUC differences between AUC1 and AUC2}
 \item{var}{Variances of AUC differences}
 \item{upper_diff}{Upper value of the differences}
 \item{lower_diff}{Upper value of the differences}
-\item{p}{two tailed P-value for significant difference between AUC1 and AUC2}
-\item{p_one_tail}{one tailed P-value for significant difference}
+\item{p}{Two tailed P-value for significant difference between AUC1 and AUC2}
+\item{p_one_tail}{One tailed P-value for significant difference}
 \item{heller_p}{P-value based on Heller's test for significant difference}
 \item{heller_upper_diff}{Upper limit of 95\% CI for the difference basedon Heller's test}
 \item{heller_lower_diff}{Lower limit of 95\% CI for the difference basedon Heller's test}
@@ -38,8 +38,8 @@ v1 or v2 indicates the ith column in the x matrix
 (v1 or v2 can be multiple values between 1 - M, see Arguments below)
 }
 \examples{
-#To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2])
-
+#To get the test statistics for the difference between AUC(y=x[,v1]) 
+#and AUC(y=x[,v2])
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
 kv=0.2 #proportion of cases (prevalence)
@@ -70,8 +70,7 @@ output=auc_diff(dat,v1,v2,nv,kv)
 
 
 #To get the test statistics for the difference between
-AUC(y=x[,v1]+x[,v2]) and AUC(y=x[,v2])
-
+#AUC(y=x[,v1]+x[,v2]) and AUC(y=x[,v2])
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
 kv=0.2 #proportion of cases (prevalence)

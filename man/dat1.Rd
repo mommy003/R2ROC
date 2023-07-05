@@ -17,6 +17,6 @@ A data frame with 10000 rows and 3 variables:
 dat1
 }
 \description{
-A dataset containing phenotypes and multiple PGSs estimated two independent discovery population
+A dataset containing raw phenotypes and multiple PGSs estimated two independent discovery population
 }
 \keyword{datasets}

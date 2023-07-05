@@ -1,6 +1,6 @@
 #' Raw phenotypes and 2 sets of discovery PGSs
 #'
-#' A dataset containing phenotypes and multiple PGSs estimated two independent discovery population
+#' A dataset containing raw phenotypes and multiple PGSs estimated two independent discovery population
 #'
 #' @format A data frame with 10000 rows and 3 variables:
 #' \describe{

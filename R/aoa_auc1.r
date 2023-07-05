@@ -4,6 +4,7 @@
 #' @importFrom stats D cor dnorm lm logLik pchisq qchisq qnorm  
 #' @param omat 3 by 3 matrix having the correlation coefficients between y, x1 and x2, i.e. omat=cor(dat) where dat is N by 3 matrix having variables in the order of cbind (y,x1,x2)
 #' @param nv Sample size
+#' @param kv Population prevalance
 #' @keywords source 
 #' @return This function will be used as source code
 

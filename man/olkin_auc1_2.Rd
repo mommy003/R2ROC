@@ -10,6 +10,8 @@ olkin_auc1_2(omat, nv, kv)
 \item{omat}{3 by 3 matrix having the correlation coefficients between y, x1 and x2, i.e. omat=cor(dat) where dat is N by 3 matrix having variables in the order of cbind (y,x1,x2)}
 
 \item{nv}{Sample size}
+
+\item{kv}{Population prevalance}
 }
 \value{
 This function will be used as source code
