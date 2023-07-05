@@ -34,7 +34,7 @@ R2ROC requires only phenotype and estimated PRS (from PLINK or any other softwar
 ```
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
-kv=0.2 #proportion of cases (prevalence)
+kv=sum(dat$V1)/length(dat$V1)  # pop. prevalence
 v1=c(1)
 output=auc_var(dat,v1,nv,kv)
 ```
@@ -52,7 +52,7 @@ output=auc_var(dat,v1,nv,kv)
 ```
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
-kv=0.2 #proportion of cases (prevalence)
+kv=sum(dat$V1)/length(dat$V1)  # pop. prevalence
 v1=c(1)
 v2=c(2)
 output=auc_diff(dat,v1,v2,nv,kv)
@@ -75,7 +75,7 @@ output=auc_diff(dat,v1,v2,nv,kv)
 ```
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
-kv=0.2 #proportion of cases (prevalence)
+kv=sum(dat$V1)/length(dat$V1)  # pop. prevalence
 v1=c(1,2)
 v2=c(2)
 output=auc_diff(dat,v1,v2,nv,kv)
