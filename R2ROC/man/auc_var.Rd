@@ -31,7 +31,7 @@ v1 indicates the ith column in the x matrix
 (v1 can be multiple values between 1 - M, see Arguments below)
 }
 \examples{
-#To get the AUC for AUC(y=x[,v1]) 
+#To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2])
 
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
