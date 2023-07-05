@@ -35,22 +35,22 @@ v1 indicates the ith column in the x matrix
 
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
-kv=0.2 #proportion of cases (prevalence)
+kv=sum(dat$V1)/length(dat$V1)  # pop. prevalence
 v1=c(1)
 output=auc_var(dat,v1,nv,kv)
 
 #R2ROC output
 #output$auc (AUC)
-#0.6821015
+#0.7390354
 
 #output$var (variance of AUC)
-#4.462817e-05
+#7.193337e-05
 
 #output$upper_auc (upper limit of 95\% CI for AUC)
-#0.6951951
+#0.7556589
 
 #output$lower_auc (lower limit of 95\% CI for AUC)
-#0.6690079
+#0.7224119
 }
 \keyword{R2}
 \keyword{information}

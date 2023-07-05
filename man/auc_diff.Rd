@@ -42,74 +42,74 @@ v1 or v2 indicates the ith column in the x matrix
 #and AUC(y=x[,v2])
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
-kv=0.2 #proportion of cases (prevalence)
+kv=sum(dat$V1)/length(dat$V1)# pop. prevalence 
 v1=c(1)
 v2=c(2)
 output=auc_diff(dat,v1,v2,nv,kv)
 
 #R2ROC output
 #output$mean_diff (mean difference of AUC1 and AUC2)
-#0.1344427
+#0.1756046
 
 #output$var (variance of AUC difference)
-#5.467435e-05
+#9.274356e-05
 
 #output$upper_diff (upper limit of 95\% CI for difference)
-#0.1489353
+#0.1944801
 
 #output$lower_diff (lower limit of 95\% CI for difference)
-#0.11995
+#0.1567292
 
 #output$p (two-tailed P-value for the differences is
 #significantly different from zero)
-#7.14694e-74
+#2.747031e-74
 
 #output$p_one_tail (one-tailed P-value for the differences
 #is significantly different from zero)
-#3.57347e-74
+#1.373515e-74
 
 
 #To get the test statistics for the difference between
 #AUC(y=x[,v1]+x[,v2]) and AUC(y=x[,v2])
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
-kv=0.2 #proportion of cases (prevalence)
+kv=sum(dat$V1)/length(dat$V1)# pop. prevalence 
 v1=c(1,2)
 v2=c(2)
 output=auc_diff(dat,v1,v2,nv,kv)
 
 #R2ROC output
 #output$mean_diff (mean difference of AUC1 and AUC2)
-#0.1374099
+#0.1793682
 
 #output$var (variance of AUC difference)
-#7.037293e-05
+#0.0001190366
 
 #output$upper_diff (upper limit of 95\% CI for difference)
-#0.1538521
+#0.2007526
 
 #output$lower_diff (lower limit of 95\% CI for difference)
-#0.1209678
+#0.1579839
 
 #output$p (two-tailed P-value for the differences is
 #significantly different from zero)
-#2.655147e-60
+#9.87014e-61
 
 #output$p_one_tail (one-tailed P-value for the differences
 #is significantly different from zero)
-#1.327574e-60
+#4.93507e-61
 
 #output$heller_p (two-tailed P-value based on Hellers test
 #for the differences is significantly different from zero)
-#2.180027e-235
+#4.2085e-237
 
 #output$heller_upper_diff (upper limit of 95\% CI for
 #difference based on Hellers test)
-#0.1543439
+#0.2013899
 
 #output$heller_lower_diff (lower limit of 95\% CI for
 #difference based on Hellers test)
-#0.1214596
+#0.1586212
 }
 \keyword{R2}
 \keyword{information}
