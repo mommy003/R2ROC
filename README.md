@@ -40,13 +40,13 @@ output=auc_var(dat,v1,nv,kv)
 ```
 - R2ROC output
 - output$auc (AUC)
-- 0.6821015
+- 0.7390354
 - output$var (variance of AUC)
-- 4.462817e-05
+- 7.193337e-05
 - output$upper_auc (upper limit of 95% CI for AUC)
-- 0.6951951
+- 0.7556589
 - output$lower_auc (lower limit of 95% CI for AUC)
-- 0.6690079
+- 0.7224119
   
 **To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2]).(here we define AUC= AUC(y=x[,v1])) and AUC=AUC(y=x[,v2])))**
 ```
@@ -59,17 +59,17 @@ output=auc_diff(dat,v1,v2,nv,kv)
 ```
 - R2ROC output
 - output$mean_diff (mean difference of AUC1 and AUC2)
-- 0.1344427
+- 0.1756046
 - output$var (variance of AUC difference)
-- 5.467435e-05
+- 9.274356e-05
 - output$upper_diff (upper limit of 95% CI for difference)
-- 0.1489353
+- 0.1944801
 - output$lower_diff (lower limit of 95% CI for difference)
-- 0.11995
+- 0.1567292
 - output$p (two-tailed P-value for the differences is significantly different from zero)
-- 7.14694e-74
+- 2.747031e-74
 - output$p_one_tail (one-tailed P-value for the differences is significantly different from zero)
-- 3.57347e-74
+- 1.373515e-74
 
 **To get the test statistics for the difference between AUC(y=x[,v1]+x[,v2]) and AUC(y=x[,v2]).**
 ```
@@ -82,23 +82,23 @@ output=auc_diff(dat,v1,v2,nv,kv)
 ```
 - R2ROC output
 - output$mean_diff (mean difference of AUC1 and AUC2)
-- 0.1374099
+- 0.1793682
 - output$var (variance of AUC difference)
-- 7.037293e-05
+- 0.0001190366
 - output$upper_diff (upper limit of 95% CI for difference)
-- 0.1538521
+- 0.2007526
 - output$lower_diff (lower limit of 95% CI for difference)
-- 0.1209678
+- 0.1579839
 - output$p (two-tailed P-value for the differences is significantly different from zero)
-- 2.655147e-60
+- 9.87014e-61
 - output$p_one_tail (one-tailed P-value for the differences is significantly different from zero)
-- 1.327574e-60
+- 4.93507e-61
 - output$heller_p (two-tailed P-value based on Heller's test for the differences is significantly different from zero)
-- 2.180027e-235
+- 4.2085e-237
 - output$heller_upper_diff (upper limit of 95% CI for difference based on Heller's test)
-- 0.1543439
+- 0.2013899
 - output$heller_lower_diff (lower limit of 95% CI for difference based on Heller's test)
-- 0.1214596
+- 0.1586212
 
 # References
 1. Olkin, I. and  Finn, J.D. Correlations redux. Psychological Bulletin, 1995. 118(1): p. 155.
