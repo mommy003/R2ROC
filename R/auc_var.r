@@ -24,6 +24,8 @@
   #' dat=dat1 #(this example embedded within the package)
   #' nv=length(dat$V1)
   #' kv=sum(dat$V1)/length(dat$V1)  # pop. prevalence
+  #' #kv is 0.10 for the pre-adjusted phenotype
+  #' #please see dat2 embedded within the package) 
   #' v1=c(1)
   #' output=auc_var(dat,v1,nv,kv)
   #' 
