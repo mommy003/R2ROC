@@ -109,7 +109,6 @@ output=auc_diff(dat,v1,v2,nv,kv)
 **To get the transformed AUC from predictive ability (R^2)**
 ```
 output=auc_trf(0.04, 0.002, 0.05)
-
 ```
 - R2ROC output
 - output$auc (transformed AUC)
