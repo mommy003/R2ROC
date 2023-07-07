@@ -106,7 +106,7 @@ output=auc_diff(dat,v1,v2,nv,kv)
 - output$heller_lower_diff (lower limit of 95% CI for difference based on Heller's test)
 - 0.1586212
 
-**To get the transformed AUC from predictive ability (R^2)**
+##To get the transformed AUC from predictive ability (R^2)
 ```
 output=auc_trf(0.04, 0.002, 0.05)
 ```
