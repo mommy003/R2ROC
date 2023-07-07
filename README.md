@@ -106,6 +106,18 @@ output=auc_diff(dat,v1,v2,nv,kv)
 - output$heller_lower_diff (lower limit of 95% CI for difference based on Heller's test)
 - 0.1586212
 
+**To get the transformed AUC from predictive ability (R^2)**
+```
+output=auc_trf(0.04, 0.002, 0.05)
+
+```
+- R2ROC output
+- output$auc (transformed AUC)
+- 0.7522887
+- output$se (se of transformed AUC)
+- 0.005948364
+
+
 # References
 1. Olkin, I. and  Finn, J.D. Correlations redux. Psychological Bulletin, 1995. 118(1): p. 155.
 2. DeLong, E.R., D.M. DeLong, and D.L. Clarke-Pearson, Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach. Biometrics, 1988: p. 837-845.
