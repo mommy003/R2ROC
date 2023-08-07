@@ -121,7 +121,8 @@ output=auc_trf(0.04, 0.002, 0.05)
 1. Olkin, I. and  Finn, J.D. Correlations redux. Psychological Bulletin, 1995. 118(1): p. 155.
 2. DeLong, E.R., D.M. DeLong, and D.L. Clarke-Pearson, Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach. Biometrics, 1988: p. 837-845.
 3. Heller, G., et al., Inference for the difference in the area under the ROC curve derived from nested binary regression models. Biostatistics, 2017. 18(2): p. 260-274.
-4. Momin, M.M., Lee, S., Wray, N.R. and Lee S.h. 2022. Significance tests for R2 of out-of-sample prediction using polygenic scores. The American Journal of Human Genetics,110: p. 349-358. 
+4. Momin, M.M., Lee, S., Wray, N.R. and Lee S.H. 2023. Significance tests for R2 of out-of-sample prediction using polygenic scores. The American Journal of Human Genetics,110: p. 349-358.
+5. Momin, M.M., Wray, N.R. and Lee S.H. 2023. R2ROC: An efficient method of comparing two or more correlated AUC from out-of-sample prediction using polygenic scores. BioRxiv. https://www.biorxiv.org/content/10.1101/2023.08.01.551571v1 
 
 # Contact information
 Please contact Md Moksedul Momin (cvasu.momin@gmail.com) or Hong Lee (hong.lee@unisa.edu.au) if you have any queries.
