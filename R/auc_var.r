@@ -44,9 +44,9 @@
   #' #0.7224119
   #'
   #' #output$p
-  #' 9.28062e-175
+  #' 9.28062e-175 (two-tailed P-value for the AUC is significantly different from 0.5)
   #'
-  #' #output$$p_one_tail
+  #' #output$$p_one_tail (one-tailed P-value for the AUC is significantly different from 0.5)
   #' 4.64031e-175
   
 
