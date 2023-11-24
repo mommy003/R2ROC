@@ -49,6 +49,10 @@ output=auc_var(dat,v1,nv,kv)
 - 0.7556589
 - output$lower_auc (lower limit of 95% CI for AUC)
 - 0.7224119
+- output$p (two-tailed P-value for the AUC is significantly different from 0.5)
+- 9.28062e-175
+- output$p_one_tail (one-tailed P-value for the AUC is significantly different from 0.5)
+- 4.64031e-175
   
 **To get the test statistics for the difference between AUC(y=x[,v1]) and AUC(y=x[,v2]).(here we define AUC= AUC(y=x[,v1])) and AUC=AUC(y=x[,v2])))**
 ```
