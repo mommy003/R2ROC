@@ -31,7 +31,7 @@ v1 indicates the ith column in the x matrix
 (v1 can be multiple values between 1 - M, see Arguments below)
 }
 \examples{
-#To get the AUC for AUC(y=x[,v1]) 
+#To get the AUC for AUC(y=x[,1]) 
 
 dat=dat1 #(this example embedded within the package)
 nv=length(dat$V1)
@@ -54,6 +54,12 @@ output=auc_var(dat,v1,nv,kv)
 
 #output$lower_auc (lower limit of 95\% CI for AUC)
 #0.7224119
+
+#output$p
+9.28062e-175
+
+#output$$p_one_tail
+4.64031e-175
 }
 \keyword{R2}
 \keyword{information}

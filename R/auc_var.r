@@ -19,7 +19,7 @@
   #' \item{upper_auc}{Upper limit of 95% CI for AUC}
   #' \item{lower_auc}{Lower limit of 95% CI for AUC}
   #' @examples
-  #' #To get the AUC for AUC(y=x[,v1]) 
+  #' #To get the AUC for AUC(y=x[,1]) 
   #'
   #' dat=dat1 #(this example embedded within the package)
   #' nv=length(dat$V1)
@@ -42,48 +42,50 @@
   #' 
   #' #output$lower_auc (lower limit of 95% CI for AUC)
   #' #0.7224119
-
+  #'
+  #' #output$p
+  #' 9.28062e-175
+  #'
+  #' #output$$p_one_tail
+  #' 4.64031e-175
+  
 
 
   auc_var = function (dat,v1,nv,kv) {
-  
+
   dat=scale(dat);omat=cor(dat)
-  
-  ord=c(1,(1+v1)) 
+
+  ord=c(1,(1+v1))
 
   if (length(v1)==1) {
 
     aoa=olkin_auc1(omat[ord,ord],nv,kv)
-    #chi_dum=aoa$auc^2/aoa$var
-    #p3=pchisq(chi_dum,1,lower.tail=F)
+    chi_dum=(aoa$auc-0.5)^2/aoa$var
+    p3=pchisq(chi_dum,1,lower.tail=F)
     uci=aoa$auc+1.96*aoa$var^.5
     lci=aoa$auc-1.96*aoa$var^.5
-    
+
     #z=list(auc=aoa$auc,var=aoa$var,upper_auc=uci,lower_auc=lci,p=p3,p_one_tail=p3/2)
-    z=list(auc=aoa$auc,var=aoa$var,upper_auc=uci,lower_auc=lci)
+    z=list(auc=aoa$auc,var=aoa$var,upper_auc=uci,lower_auc=lci,p=p3,p_one_tail=p3/2)
     return(z)
-    
+
   }
+
 
   if (length(v1)==2) {
 
     aoa=olkin_auc12(omat[ord,ord],nv,kv)
-    #chi_dum=aoa$auc^2/aoa$var
-    #p3=pchisq(chi_dum,1,lower.tail=F)
+    chi_dum=(aoa$auc-0.5)^2/aoa$var
+    p3=pchisq(chi_dum,1,lower.tail=F)
     uci=aoa$auc+1.96*aoa$var^.5
     lci=aoa$auc-1.96*aoa$var^.5
-    
+
     #z=list(auc=aoa$auc,var=aoa$var,upper_auc=uci,lower_auc=lci,p=p3,p_one_tail=p3/2)
-    z=list(auc=aoa$auc,var=aoa$var,upper_auc=uci,lower_auc=lci)
+    z=list(auc=aoa$auc,var=aoa$var,upper_auc=uci,lower_auc=lci,p=p3,p_one_tail=p3/2)
     return(z)
-    
   }
 
-
-
-  
 }
-
 
 
 
